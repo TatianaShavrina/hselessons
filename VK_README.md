@@ -17,11 +17,13 @@ https://github.com/TatianaShavrina/hselessons/blob/master/bc_wall_comments.csv
 
 ![alt text](https://pp.userapi.com/c626322/v626322895/5eb44/yMhSJJE4g4w.jpg "Logo Title Text 1")
 
+![alt text](https://pp.userapi.com/c626322/v626322895/5eb7e/xiCoU6lGxgw.jpg "Logo Title Text 1")
+
 ![alt text](https://pp.userapi.com/c626322/v626322895/5eb3d/MV2SWmsSvWA.jpg "Logo Title Text 1")
 
 ![alt text](https://pp.userapi.com/c626322/v626322895/5eb36/4B3d158OUQM.jpg "Logo Title Text 1")
 
-Комментарии
+Комментарии 
 
 ![alt text](https://pp.userapi.com/c626322/v626322895/5eb6c/YQOG2SqCxnQ.jpg "Logo Title Text 1")
 

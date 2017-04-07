@@ -33,6 +33,14 @@ posts %>%
 
 posts %>%
   ggplot(aes(age, text.length)) +
+  geom_point(colour = "red") +
+  facet_wrap(~age)  +
+  labs(title = "Correlation of author age and mean post length ") +
+  xlab("author age") +
+  ylab("text.length")
+
+posts %>%
+  ggplot(aes(age, text.length)) +
   geom_point(colour = "red", aes(size = likes)) +
   scale_colour_gradient(low = "red") +
   labs(title = "Correlation of author age and post length (with likes)") +

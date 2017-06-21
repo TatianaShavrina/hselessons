@@ -12,31 +12,12 @@ from keras.models import Sequential
 from keras.layers.core import Dense, Activation, Dropout
 from keras.layers.recurrent import LSTM, SimpleRNN
 from keras.layers.wrappers import TimeDistributed
-#import argparse
-#from RNN_utils import *
 
-#original architecture written by Trung Tran github.com/ChunML
+
+#original architecture written by Trung Tran 
 #https://chunml.github.io/ChunML.github.io/project/Creating-Text-Generator-Using-Recurrent-Neural-Network/
 
-"""# Parsing arguments for Network definition
-ap = argparse.ArgumentParser()
-ap.add_argument('-data_dir', default='./data/test.txt')
-ap.add_argument('-batch_size', type=int, default=50)
-ap.add_argument('-layer_num', type=int, default=2)
-ap.add_argument('-seq_length', type=int, default=50)
-ap.add_argument('-hidden_dim', type=int, default=500)
-ap.add_argument('-generate_length', type=int, default=500)
-ap.add_argument('-nb_epoch', type=int, default=20)
-ap.add_argument('-mode', default='train')
-ap.add_argument('-weights', default='')
-args = vars(ap.parse_args())"""
 
-
-
-# In[40]:
-
-from __future__ import print_function
-import numpy as np
 
 # method for generating text
 def generate_text(model, length, vocab_size, ix_to_char):
@@ -82,7 +63,7 @@ def load_data(data_dir, seq_length):
 	return X, y, VOCAB_SIZE, ix_to_char
 
 
-# In[41]:
+
 
 DATA_DIR ="/home/mi_air/Desktop/progr/bot/jew.txt"
 BATCH_SIZE = 32
@@ -96,9 +77,6 @@ LAYER_NUM = 2
 
 # Creating training data
 X, y, VOCAB_SIZE, ix_to_char = load_data(DATA_DIR, SEQ_LENGTH)
-
-
-# In[45]:
 
 # Creating and compiling the Network
 model = Sequential()
@@ -118,8 +96,6 @@ if not WEIGHTS == '':
 else:
     nb_epoch = 0
 
-
-# In[ ]:
 
 # Training if there is no trained weights specified
 if MODE == 'train' or WEIGHTS == '':
@@ -144,7 +120,7 @@ else:
     print('\n\nNothing to do!')
 
 
-# In[ ]:
+
 
 # Generate some sample  to know how bad it is!
 generate_text(model, 15, VOCAB_SIZE, ix_to_char)

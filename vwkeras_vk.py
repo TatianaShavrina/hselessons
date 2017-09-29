@@ -1,8 +1,8 @@
 # coding: utf-8
 import gensim
 import re
-import word2veckeras
-from gensim.models.word2vec import Word2Vec
+from word2veckeras.word2veckeras import Word2VecKeras
+#from gensim.models.word2vec import Word2Vec
 
 sentences =  open(r'vktexts.txt', 'r', encoding='utf-8').read()
 sentences = [re.sub("[\W_]+", "", sent) for sent in sentences]

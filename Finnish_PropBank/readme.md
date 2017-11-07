@@ -10,5 +10,4 @@ To reproduce my results, you will need to install these libraries:
  - sklearn
  
  
-Here you can find Jupyter notebook with all the code
-And also saved models
+Here you can find Jupyter notebook with all the code and run it
